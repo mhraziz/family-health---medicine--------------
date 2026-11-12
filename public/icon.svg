@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background with Safe Margin (Maskable Friendly) -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+
+  <!-- Inner Soft Container -->
+  <circle cx="256" cy="256" r="190" fill="#ffffff" opacity="0.12"/>
+
+  <!-- Central Emblem with Shadow -->
+  <g filter="url(#shadow)">
+    <!-- Medical Plus / Care Cross Base -->
+    <rect x="226" y="116" width="60" height="280" rx="30" fill="#ffffff"/>
+    <rect x="116" y="226" width="280" height="60" rx="30" fill="#ffffff"/>
+
+    <!-- Red Heart in the Center -->
+    <path d="M256,236 C240,210 200,205 180,230 C155,260 185,300 256,350 C327,300 357,260 332,230 C312,205 272,210 256,236 Z" fill="url(#heartGrad)"/>
+
+    <!-- Pill Capsule Motif in Upper Wing -->
+    <rect x="236" y="136" width="40" height="40" rx="20" fill="#10b981"/>
+    
+    <!-- Heartbeat Line Motif in Lower Wing -->
+    <path d="M216,280 L236,280 L246,260 L266,305 L276,280 L296,280" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

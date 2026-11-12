@@ -1,0 +1,6 @@
+{
+  "name": "Family Health & Medicine (خاندانی صحت)",
+  "description": "Offline-first native Android health & medicine manager designed for elderly parents and rural households with Room SQLite offline persistence, high-contrast UI, and English, Urdu, and Sindhi RTL support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
